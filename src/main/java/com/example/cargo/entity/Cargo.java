@@ -6,6 +6,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Positive;
 import java.util.Objects;
 
 @Entity
@@ -19,6 +20,7 @@ public class Cargo {
 
     @NotNull
     @Schema(required = true,defaultValue ="750.34")
+    @Positive(message = "Weight must be positive value")
     private Double weight;
 
     @Enumerated(EnumType.STRING)
