@@ -3,7 +3,7 @@
 ## Tools and Technologies Used
 
 Java        -  8  
-Spring Boot - v2.7.10  
+Spring Boot - v2.5.4  
 Junit       - 4.13.2 
 
 ## API Details
